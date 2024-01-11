@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Display_accessrecord</h1>
+        <table border="3px">
+            <tr>
+                <th>PK/ID</th>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Author</th>
+            </tr>
+            {% for ar in accessrecords %}
+                <tr>
+                    <td>{{ar.pk}}</td>
+                    <td>{{ar.name}}</td>
+                    <td>{{ar.date}}</td>
+                    <td>{{ar.author}}</td>
+                </tr>
+
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
